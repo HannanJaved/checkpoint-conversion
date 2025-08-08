@@ -22,14 +22,14 @@ python consolidated_conversion_workflow.py \
 
 ```bash
 python consolidated_conversion_workflow.py \
-  --checkpoint_dir /leonardo_work/AIFAC_L01_028/hmahadik/checkpoint_backup/nemotron-cc-hq/open-sci-ref_model-0.13b_data-Nemotron-cc-2024-HQ-real-synth-mix_tokenizer-GPT-NeoX_samples-300B_global_bs-1008_context-4096_schedule-WSD_lr-4e-3_warmup-25000_machine-LEONARDO_14467405/checkpoints/torch/ \
-  --save_checkpoints_dir /leonardo_work/AIFAC_L01_028/hmahadik/checkpoint_backup/nemotron-cc-hq/open-sci-ref_model-0.13b_data-Nemotron-cc-2024-HQ-real-synth-mix_tokenizer-GPT-NeoX_samples-300B_global_bs-1008_context-4096_schedule-WSD_lr-4e-3_warmup-25000_machine-LEONARDO_14467405/checkpoints/ \
-  --opensci_hf_path /leonardo_work/AIFAC_L01_028/hmahadik/Open-Sci-hf \
-  --convert_logs_dir /leonardo/home/userexternal/hmahadik/logs/convert_logs \
-  --container_image /leonardo_work/AIFAC_L01_028/hmahadik/container_pretraining_megatron.sif \
-  --venv_path /leonardo/home/userexternal/hmahadik/myenv/bin/activate \
-  --log_path /leonardo/home/userexternal/hmahadik/logs/Smollm2_annealing/actual_run.out \
-  --opensci_megatron_path /leonardo_work/AIFAC_L01_028/hmahadik/Megatron-LM-Open-Sci
+  --checkpoint_dir /cluster_name/project_name/project_name/model_name/checkpoints/torch/ \
+  --save_checkpoints_dir /cluster_name/project_name/project_name/model_name/checkpoints/ \
+  --opensci_hf_path /cluster_name/project_name/project_name/Open-Sci-hf \
+  --convert_logs_dir /cluster_name/home/userexternal/project_name/logs/convert_logs \
+  --container_image /cluster_name/project_name/project_name/container_pretraining_megatron.sif \
+  --venv_path /cluster_name/home/userexternal/project_name/myenv/bin/activate \
+  --log_path /cluster_name/home/userexternal/project_name/logs/training_logs/actual_run.out \
+  --opensci_megatron_path /cluster_name/project_name/project_name/Megatron-LM-Open-Sci
 ```
 
 ## Arguments
