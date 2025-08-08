@@ -37,7 +37,7 @@ python consolidated_conversion_workflow.py \
 - `--save_checkpoints_dir`: Directory to save converted HuggingFace checkpoints.
 - `--opensci_hf_path`: Path to the Open-Sci-hf repository (for config/model/tokenizer files).
 - `--convert_logs_dir`: Directory to store SLURM job logs for conversion.
-- `--container_image`: Path to the container image (Singularity/Apptainer `.sif`).
+- `--container_image`: Path to the container image (Singularity `.sif`).
 - `--venv_path`: Path to the Python virtual environment activation script.
 - `--log_path`: Path to the SLURM log file containing model training arguments.
 - `--opensci_megatron_path`: Path to the Megatron-LM-Open-Sci repository.
