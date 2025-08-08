@@ -41,8 +41,8 @@ python consolidated_conversion_workflow.py \
 - `--venv_path`: Path to the Python virtual environment activation script.
 - `--log_path`: Path to the SLURM log file containing model training arguments.
 - `--opensci_megatron_path`: Path to the Megatron-LM-Open-Sci repository.
-- `--account`, `--partition`: (Optional) SLURM account and partition for job submission.
-- `--tokenizer_cache_dir`: (Optional) Directory for HuggingFace tokenizer cache.
+- `--account`, `--partition`: SLURM account and partition for job submission.
+- `--tokenizer_cache_dir`: Directory for HuggingFace tokenizer cache.
 
 ## Workflow Overview
 1. **Argument Parsing**: The script parses all command-line arguments and validates paths.

@@ -449,37 +449,37 @@ def main():
     parser.add_argument(
         "--checkpoint_dir",
         type=str,
-        default="/leonardo_work/AIFAC_L01_028/hmahadik/annealing/nemotron-cc-hq/open-sci-ref_model-0.13b_data-Nemotron-cc-2024-HQ-real-synth-mix_tokenizer-GPT-NeoX_samples-300B_global_bs-1008_context-4096_schedule-WSD_lr-4e-3_warmup-25000_machine-LEONARDO_14467405/SmolLM2-HQ-Split-24k/checkpoints/torch",
-        help="Directory containing checkpoints.",
+        required=True,
+        help="Directory containing torch checkpoints.",
     )
     parser.add_argument(
         "--log_path",
         type=str,
-        default="/leonardo/home/userexternal/hmahadik/logs/Smollm2_annealing/actual_run.out",
-        help="Path to the SLURM log file.",
+        required=True,
+        help="Path to the SLURM log file used for training the model.",
     )
     parser.add_argument(
         "--save_checkpoints_dir",
         type=str,
-        default="/leonardo_work/AIFAC_L01_028/hmahadik/annealing/nemotron-cc-hq/open-sci-ref_model-0.13b_data-Nemotron-cc-2024-HQ-real-synth-mix_tokenizer-GPT-NeoX_samples-300B_global_bs-1008_context-4096_schedule-WSD_lr-4e-3_warmup-25000_machine-LEONARDO_14467405/SmolLM2-HQ-Split-24k/checkpoints",
+        required=True,
         help="Directory to save converted checkpoints",
     )
     parser.add_argument(
         "--opensci_megatron_path",
         type=str,
-        default="/leonardo_work/AIFAC_L01_028/hmahadik/Megatron-LM-Open-Sci",
+        required=True,
         help="Path to Megatron-LM-Open-Sci repository",
     )
     parser.add_argument(
         "--opensci_hf_path",
         type=str,
-        default="/leonardo_work/AIFAC_L01_028/hmahadik/Open-Sci-hf",
+        required=True,
         help="Path to Open-Sci-hf repository",
     )
     parser.add_argument(
         "--convert_logs_dir",
         type=str,
-        default="/leonardo/home/userexternal/hmahadik/logs/convert_logs/SmolLM2-HQ-Split-24k/",
+        required=True,
         help="Directory to save conversion logs",
     )
     parser.add_argument(
@@ -497,7 +497,7 @@ def main():
     parser.add_argument(
         "--container_image",
         type=str,
-        default="/leonardo_work/AIFAC_L01_028/hmahadik/container_pretraining_megatron.sif",
+        required=True,
         help="Container image to use for conversion",
     )
     parser.add_argument(
@@ -509,7 +509,7 @@ def main():
     parser.add_argument(
         "--venv_path",
         type=str,
-        default="/leonardo_work/AIFAC_L01_028/hmahadik/venv/bin/activate",
+        required=True,
         help="Path to the virtual environment.",
     )
 
