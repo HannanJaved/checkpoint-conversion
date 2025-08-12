@@ -69,7 +69,7 @@ if [ ! -z "{pre_run_cmd}" ]; then
 fi
 
 # Convert the model to HF
-source "{venv_path}" || exit 1
+source {venv_path}/bin/activate || exit 1
 
 # cd "$MEGATRON_OPEN_SCI_PATH"
 

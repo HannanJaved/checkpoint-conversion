@@ -13,7 +13,7 @@ python consolidated_conversion_workflow.py \
   --opensci_hf_path <path_to_Open-Sci-hf_repo> \
   --convert_logs_dir <path_to_conversion_logs> \
   --container_image <path_to_container_image.sif> \
-  --venv_path <path_to_python_venv_activate> \
+  --venv_path <path_to_python_venv> \
   --log_path <path_to_slurm_log_file> \
   --opensci_megatron_path <path_to_Megatron-LM-Open-Sci_repo>
 ```
@@ -27,7 +27,7 @@ python consolidated_conversion_workflow.py \
   --opensci_hf_path /cluster_name/project_name/project_name/Open-Sci-hf \
   --convert_logs_dir /cluster_name/home/userexternal/project_name/logs/convert_logs \
   --container_image /cluster_name/project_name/project_name/container_pretraining_megatron.sif \
-  --venv_path /cluster_name/home/userexternal/project_name/myenv/bin/activate \
+  --venv_path /cluster_name/home/userexternal/project_name/myenv \
   --log_path /cluster_name/home/userexternal/project_name/logs/training_logs/actual_run.out \
   --opensci_megatron_path /cluster_name/project_name/project_name/Megatron-LM-Open-Sci
 ```
